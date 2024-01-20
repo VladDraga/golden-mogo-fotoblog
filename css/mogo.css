@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue-text: #95e1d3;
+  --active-link: #f38181;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-item {
+  list-style: none;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 55px;
+}
+
+.header-link {
+  text-transform: uppercase;
+  color: var(--blue-text);
+  text-decoration: none;
+}
+
+.header-link_active {
+  color: var(--active-link);
+}
+.header-link {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.header-link_active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--active-link);
+  bottom: 0;
+  left: 0;
+}
+
+.header-link:hover {
+  color: var(--active-link);
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+.service-title {
+  margin-top: 68px;
+  text-align: center;
+}
+
+.title h3 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.title h2 {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.service-list {
+  margin-top: 65px;
+}
+
+.service-item{
+  width: 30%;
+}
+
+.service-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.service-item h4 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.service-item p {
+  font-family: "Roboto", sans-serif;
+  color: #b6b6b6;
+  line-height: 1.47;
+}
+
+.service-red-line {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 60px;
+  height: 4px;
+  background-color: var(--active-link);
+
+}
+
+.who-we-are-title p {
+  color: #b6b6b6;
+  margin-top: 45px;
+  margin-bottom: 27px;
+}
+
+.who-we-are-item img {
+  width: 380px;
+  height: 470px;
+  object-fit: cover;
+}
+
+.who-we-are-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.who-we-are-item figcaption {
+  margin-top: 30px;
+}
+
+.who-we-are-profesion {
+  font-family: "Roboto", sans-serif;
+  color: #b6b6b6;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.footer {
+  border-top: 1px solid #b6b6b6;
+}
+
+.footer-form {
+  height: 39px;
+  display: flex;
+}
+
+.footer-form-input {
+  width: 230px;
+  padding-left: 10px;
+  border: 1px solid #b6b6b6;
+}
+
+.footer-form-input::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #b6b6b6;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.footer-form-btn {
+  height: 100%;
+  background-color: var(--blue-text);
+  color: white;
+  font-weight: 700;
+  border: 0;
+  padding: 11px 38px;
+}
+
+.footer-copy {
+  padding: 22px 0;
+}
+
+.footer-copy_link {
+  text-decoration: none;
+  color: var(--active-link);
+}
+
+.header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list{
+  display: flex;
+}
+
+.header{
+  padding: 17px 0;
+}
+
+.service-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-item{
+  display: flex;
+  align-items: flex-start;
+}
+
+.service-item img{
+  width: 37px;
+  margin-right: 18px; 
+}
+
+.who-we-are-list{
+  display: flex;
+}
+
+.who-we-are-title{
+  text-align: center;
+}
+
+.who-we-are-name{
+  text-align: center;
+}
+
+.who-we-are-profesion{
+  text-align: center;
+}
+
+.footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
